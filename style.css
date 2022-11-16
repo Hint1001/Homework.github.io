@@ -1,16 +1,46 @@
-﻿
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:lightgreen;
+﻿*{
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.3s;
 }
-
+body {
+  background-image: url("nature.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+table{
+border:2px double color #ff6a00;
+border-radius:20px;
+background-color:#000;
+padding:15px;
+margin:0 auto;
+width:800px;
+height:800px;
+}
+.flip-card img{
+  border-radius: 10px;
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  border-radius: 10px;
+  
+
 }
 
+.szoveg h3{
+  padding-bottom: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.szoveg h1{
+  padding-top: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -19,10 +49,12 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 .flip-card-front, .flip-card-back {
@@ -31,15 +63,76 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  border-radius: 10px;
 }
 
 .flip-card-back {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  border-radius: 10px;
+}
+.icon-bar {
+  width: 100%; 
+  background-color: #555; 
+  overflow: auto; 
+}
+
+.icon-bar a {
+  float: left; 
+  text-align: center; 
+  width: 20%; 
+  padding: 12px 0; 
+  transition: all 0.3s ease; 
+  color: white; 
+  font-size: 36px; 
+}
+
+.icon-bar a:hover {
+  background-color: #000; 
+}
+
+.active {
+  background-color: #81aa04;
+}
+
+
+
+.topnav {
+  background-color: rgba(1,1,1,0.4);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgba(221, 221, 221, 0.418);
+  color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  color:#f2f2f2;
+}
+
+.topnav a.active {
+  background-color: #81aa04;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
 }
