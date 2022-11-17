@@ -136,3 +136,8 @@ height:800px;
 .topnav .icon {
   display: none;
 }
+ul li{
+  display:inline-block;
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
